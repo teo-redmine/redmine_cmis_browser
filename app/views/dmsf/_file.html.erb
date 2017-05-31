@@ -1,0 +1,116 @@
+<%#=
+# encode: utf-8
+#
+# Redmine plugin for Document Management System "Features"
+#
+# Copyright (C) 2011-15 Karel Pičman <karel.picman@kontron.com>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+%>
+
+<% locked_for_user = file.locked_for_user? %>
+<% locked = file.locked? %>
+
+<td class="check"><%= check_box_tag(name, id, false,
+  :title => l(:title_check_for_zip_download), :id => "file_#{id}") %></td>
+<td class="title">
+  <% file_view_url = url_for({:controller => :attachments, :action => 'show', :id => file}) %>
+  <%= link_to(h(title),
+    file_view_url,
+    :target => "_blank",
+    :class => "icon icon-file #{DmsfHelper.filetype_css(file.name)}",
+    :title => l(:title_title_version_version_download, :title => h(file.title), :version => file.version),
+    'data-downloadurl' => "#{file.last_revision.detect_content_type}:#{h(file.name)}:#{file_view_url}") %>
+  <div class="filename" title="<%= l(:title_filename_for_download)%>"><%= h(link ? link.path : file.display_name) %></div>
+</td>
+<td class="size"><%= number_to_human_size(file.filesize) %></td>
+<td class="modified">
+  <%= format_time(file.last_revision.updated_at) %>
+  <% if locked_for_user %>
+    <% if file.lock.reverse[0].user %>
+      <%= link_to(image_tag(link ? 'locked_gray.png' : 'locked.png', :plugin => 'redmine_cmis_browser'),
+        user_path(file.lock.reverse[0].user),
+        :title => l(:title_locked_by_user, :user => file.lock.reverse[0].user)) %>
+    <% else %>
+      <%= content_tag(:span, image_tag(link ? 'locked_gray.png' : 'locked.png', :plugin => 'redmine_cmis_browser'),
+        :title => l(:notice_account_unknown_email)) %>
+    <% end %>
+  <% elsif locked %>
+    <%= content_tag(:span, image_tag(link ? 'lockedbycurrent_gray.png' : 'lockedbycurrent.png', :plugin => 'redmine_cmis_browser'),
+      :title => l(:title_locked_by_you)) %>
+  <% end %>
+</td>
+<td class="version" title="<%= file.last_revision.comment %>"><%= file.last_revision.version %></td>
+<td class="workflow">
+  <%= file.attachment_of %>
+</td>
+<td class="author"><%= h(file.last_revision.user) %></td>
+<td class="invisible">
+  <% if false %>
+    <% if @file_manipulation_allowed || @file_approval_allowed %>
+      <% if @file_manipulation_allowed %>
+        <% unless locked %>
+          <%= link_to(image_tag('filedetails.png', :plugin => 'redmine_cmis_browser'),
+            dmsf_file_path(:id => file),
+            :title => l(:link_details, :title => h(file.last_revision.title))) %>
+          <%= link_to(image_tag('lock.png', :plugin => 'redmine_cmis_browser'),
+            lock_dmsf_files_path(:id => file),
+            :title => l(:title_lock_file)) %>
+          <% if file.notification %>
+            <%= link_to(image_tag('notify.png', :plugin => 'redmine_cmis_browser'),
+              notify_deactivate_dmsf_files_path(:id => file),
+              :title => l(:title_notifications_active_deactivate)) %>
+          <% else %>
+            <%= link_to(image_tag('notifynot.png', :plugin => 'redmine_cmis_browser'),
+              notify_activate_dmsf_files_path(:id => file),
+              :title => l(:title_notifications_not_active_activate)) %>
+          <% end %>
+          <% if link %>
+            <%= link_to(image_tag('delete.png'),
+                dmsf_link_path(link),
+                :data => {:confirm => l(:text_are_you_sure)},
+                :method => :delete,
+                :title => l(:title_delete)) %>
+          <% else %>
+            <% if @file_delete_allowed %>
+              <%= link_to(image_tag('delete.png'),
+                dmsf_file_path(:id => file),
+                :data => {:confirm => l(:text_are_you_sure)},
+                :method => :delete,
+                :title => l(:title_delete)) unless locked_for_user %>
+            <% else %>
+              <span class="icon"></span>
+            <% end %>
+          <% end %>
+        <% else %>
+          <span class="icon"></span>
+          <% if (!locked_for_user || @force_file_unlock_allowed) && file.unlockable? %>
+            <%= link_to(image_tag('unlock.png', :plugin => 'redmine_cmis_browser'),
+              unlock_dmsf_files_path(:id => file),
+              :title => l(:title_unlock_file))%>
+          <% else %>
+            <span class="icon"></span>
+          <% end %>
+          <span class="icon"></span>
+          <span class="icon dmsf_icon-narrow"></span>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+</td>
+<td class="invisible">1</td>
+<td class="invisible"><%= file.last_revision.size %></td>
+<td class="invisible"><%= file.last_revision.updated_at.to_i %></td>
+<td class="invisible"><%= file.last_revision.iversion %></td>
