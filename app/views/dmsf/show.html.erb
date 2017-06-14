@@ -121,7 +121,7 @@
     </thead>
   <tbody>
   <% if @subfolders != nil && !@subfolders.empty? %>
-    <% @subfolders.each do |subfolder| %>    
+    <% @subfolders.each do |subfolder| %>
       <tr class="dir">
         <%= render(:partial => 'dir', 
           :locals => { 

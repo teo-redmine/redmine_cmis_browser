@@ -26,11 +26,11 @@ require 'zip'
 
 Redmine::Plugin.register :redmine_cmis_browser do
   name 'Redmine CMIS Browser'
-  author 'Vít Jonáš / Daniel Munn / Karel Pičman'
-  description 'Document Management System Features'
+  author 'Junta de Andalucía - Guadaltel'
+  description 'Plugin para visualizar y descargar contenido de repositorio CMIS de Alfresco'
   version '1.5.6'
-  url 'http://www.redmine.org/plugins/dmsf'
-  author_url 'https://github.com/danmunn/redmine_dmsf/graphs/contributors'
+  url 'https://github.com/teo-redmine/redmine_cmis_browser.git'
+  author_url 'http://www.guadaltel.com'
   
   requires_redmine :version_or_higher => '3.0.0'
   
@@ -48,7 +48,7 @@ Redmine::Plugin.register :redmine_cmis_browser do
       'dmsf_display_notified_recipients' => 0
     }
   
-  menu :project_menu, :dmsf, { :controller => 'dmsf', :action => 'show' }, :caption => :menu_dmsf, :before => :documents, :param => :id
+  menu :project_menu, :dmsf, { :controller => 'dmsf', :action => 'show' }, :caption => :menu_dmsf, :after => :repository, :param => :id
     
   #Redmine::Activity.register :dmsf_file_revision_accesses, :default => false
   #Redmine::Activity.register :dmsf_file_revisions

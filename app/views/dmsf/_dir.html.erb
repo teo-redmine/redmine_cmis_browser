@@ -26,9 +26,15 @@
 <td class="check"><%= check_box_tag(name, id, false,
   :title => l(:title_check_for_zip_download), :id => "subfolder_#{id}") %></td>
 <td class="title">
-  <%= link_to(h(title),
-    dmsf_folder_path(:id => project, :folder_id => subfolder.id),
-    :class => 'icon icon-folder') %>
+  <% if subfolder.is_project %>
+    <%= link_to(h(title),
+      url_for(:controller => 'dmsf', :action => 'show', :id => subfolder.redmine_project_identifier),
+      :class => 'icon icon-folder') %>
+  <% else %>
+    <%= link_to(h(title),
+      dmsf_folder_path(:id => project, :folder_id => subfolder.id),
+      :class => 'icon icon-folder') %>
+  <% end %>
   <% if link %>
     <div class="filename" title="<%= l(:label_target_folder)%>"><%= link.path %></div>
   <% else %>

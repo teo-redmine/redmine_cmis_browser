@@ -33,7 +33,7 @@
     :class => "icon icon-file #{DmsfHelper.filetype_css(file.name)}",
     :title => l(:title_title_version_version_download, :title => h(file.title), :version => file.version),
     'data-downloadurl' => "#{file.last_revision.detect_content_type}:#{h(file.name)}:#{file_view_url}") %>
-  <div class="filename" title="<%= l(:title_filename_for_download)%>"><%= h(link ? link.path : file.display_name) %></div>
+  <div class="filename" title="<%= l(:title_filename_for_download)%>"><%= h(link ? link.path : file.cmis_name) %></div>
 </td>
 <td class="size"><%= number_to_human_size(file.filesize) %></td>
 <td class="modified">
@@ -54,7 +54,10 @@
 </td>
 <td class="version" title="<%= file.last_revision.comment %>"><%= file.last_revision.version %></td>
 <td class="workflow">
-  <%= file.attachment_of %>
+  <%= link_to(h(file.attachment_of),
+    url_for(file.link_to_attachment_of),
+    :target => "_self",
+    :title => file.attachment_of) %>
 </td>
 <td class="author"><%= h(file.last_revision.user) %></td>
 <td class="invisible">
