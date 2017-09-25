@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 zh-TW:
-  dmsf: 文件總管
-  label_dmsf_file_plural: 文件檔案
-  label_dmsf_file_revision_plural: Document revisions
-  label_dmsf_file_revision_access_plural: Document accesses
+  rcb: 文件總管
+  label_rcb_file_plural: 文件檔案
+  label_rcb_file_revision_plural: Document revisions
+  label_rcb_file_revision_access_plural: Document accesses
   warning_no_entries_selected: 尚未選取任何項目
   error_email_to_must_be_entered: 請輸入收件者的電子郵件
   warning_file_already_locked: 檔案己經鎖定
@@ -84,7 +84,7 @@ zh-TW:
   title_lock_file: 鎖定檔案。禁止其它使用者修改。  
   title_download_checked: 以ZIP下載所選取的檔案  
   title_send_checked_by_email: 以電子郵件發送所選取的檔案
-  link_user_preferences: 你的DMSF的系統偏好設定
+  link_user_preferences: 你的Alfresco的系統偏好設定
   heading_send_documents_by_email: 電子郵件寄送檔案
   label_email_from: 寄件者
   label_email_to: 收件者
@@ -148,11 +148,11 @@ zh-TW:
   heading_uploaded_files: 上傳檔案
   submit_commit: 提交
   link_documents: 文件檔案
-  permission_view_dmsf_file_revision_accesses: View downloads in Activity stream
-  permission_view_dmsf_file_revisions: View revisions in Activity stream
-  permission_view_dmsf_folders: 瀏覽文件檔案
+  permission_view_rcb_file_revision_accesses: View downloads in Activity stream
+  permission_view_rcb_file_revisions: View revisions in Activity stream
+  permission_view_rcb_folders: 瀏覽文件檔案
   permission_user_preferences: 使用者偏好設定
-  permission_view_dmsf_files: 查看文件檔案
+  permission_view_rcb_files: 查看文件檔案
   permission_folder_manipulation: 資料夾操作
   permission_file_manipulation: 文件操作  
   permission_force_file_unlock: 強制解除檔案鎖定
@@ -177,16 +177,16 @@ zh-TW:
   error_file_can_not_be_created: 在存儲目錄裡，無法建立檔案。
   error_wrong_zip_encoding: 不正確的Zip encoding
   warning_xapian_not_available: Xapian not available
-  menu_dmsf: 文件總管
+  menu_rcb: 文件總管
   label_physical_file_delete: 永久刪除檔案
   user_is_not_project_member: 您不是專案的成員之一
   heading_access_downloads_emails: 下載/電子郵件
   heading_access_first: First
   heading_access_last: Last
-  label_dmsf_updated: Updated
-  label_dmsf_downloaded: Downloaded
+  label_rcb_updated: Updated
+  label_rcb_downloaded: Downloaded
   title_total_size_of_all_files: 資料夾所有檔案的檔案大小
-  project_module_dmsf: 文件總管
+  project_module_rcb: 文件總管
   warning_no_project_to_copy_file_to: No project to copy file to
   comment_copied_from: "Copied from %{source}"
   notice_file_copied: File copied
@@ -194,7 +194,7 @@ zh-TW:
   field_target_project: Target project
   field_target_folder: Target folder
   title_copy_or_move: Copy/Move
-  label_dmsf_folder_plural: Folders
+  label_rcb_folder_plural: Folders
   comment_moved_from: "Moved from %{source}"
   error_target_folder_same: Target folder and project are the same as current
   error_file_cannot_be_moved: "File can't be moved"
@@ -210,9 +210,7 @@ zh-TW:
   header_minimum_filesize: 檔案錯誤
   error_minimum_filesize: "這個檔案 %{file} 為空。無法被附加。"
   parent_directory: 上層目錄
-  note_webdav: "Webdav 啟用後，可在下列網址被找到: %{protocol}://%{domain}/dmsf/webdav/[project identifier]"
-  label_webdav: Webdav功能
-  label_dmsf_plural: "複制文件總管的檔案和資料夾。 ( 資料夾: %{folders} 檔案: %{files} )"
+  label_rcb_plural: "複制文件總管的檔案和資料夾。 ( 資料夾: %{folders} 檔案: %{files} )"
 
   warning_folder_already_locked: 這個資料夾己經被鎖定了
   notice_folder_locked: 這個資料夾己經成功地鎖定了。
@@ -223,32 +221,27 @@ zh-TW:
   title_unlock_folder: 解除鎖定。允許其它使用者修改。
   title_lock_folder: 鎖定資料夾。禁止其它使用者修改。
 
-  select_option_webdav_readonly: 唯讀
-  select_option_webdav_readwrite: 可讀可寫
-  label_webdav_strategy: Webdav策略
-  note_webdav_strategy: 讓管理者決定，webdav給使用者的權限，是唯讀or可讀可寫。
-
-  error_unable_delete_dmsf_workflow: 無法刪除工作流程
+  error_unable_delete_rcb_workflow: 無法刪除工作流程
   error_empty_note: "備註不可以為空。"
   error_workflow_assign: 當指派時發生錯誤
   error_cannot_start_workflow: "工作流程無法開始"
   error_cannot_renumber_steps: "工作步驟無法重新標記號碼"
-  label_dmsf_workflow_new: 建立批准流程
-  field_label_dmsf_workflow: 批准流程
-  field_label_dmsf_workflow_name: 批准流程名稱
-  label_dmsf_workflow_plural: 批准流程
-  label_dmsf_workflow_plural_num: 批准流程 (%{count})
-  label_dmsf_workflow_step: 步驟
-  label_dmsf_workflow_step_plural: 步驟
-  label_dmsf_workflow_approval: 批准
-  label_dmsf_workflow_approval_plural: 批准
-  label_dmsf: 文件總管
-  label_dmsf_wokflow_action_approve: 批准
-  label_dmsf_wokflow_action_reject: 拒絕
-  label_dmsf_wokflow_action_delegate: 委派給
-  label_dmsf_wokflow_action_assign: 指定批准流程
-  label_dmsf_wokflow_action_start: 流程開始
-  label_dmsf_workflow_add_approver: "Add a new approver with a logical function:"
+  label_rcb_workflow_new: 建立批准流程
+  field_label_rcb_workflow: 批准流程
+  field_label_rcb_workflow_name: 批准流程名稱
+  label_rcb_workflow_plural: 批准流程
+  label_rcb_workflow_plural_num: 批准流程 (%{count})
+  label_rcb_workflow_step: 步驟
+  label_rcb_workflow_step_plural: 步驟
+  label_rcb_workflow_approval: 批准
+  label_rcb_workflow_approval_plural: 批准
+  label_rcb: 文件總管
+  label_rcb_wokflow_action_approve: 批准
+  label_rcb_wokflow_action_reject: 拒絕
+  label_rcb_wokflow_action_delegate: 委派給
+  label_rcb_wokflow_action_assign: 指定批准流程
+  label_rcb_wokflow_action_start: 流程開始
+  label_rcb_workflow_add_approver: "Add a new approver with a logical function:"
   label_or: or
   label_action: Action
   label_note: Note  
@@ -257,14 +250,14 @@ zh-TW:
   title_delegation: Delegation
   title_assignment: Assignment
   title_start: Start  
-  title_dmsf_workflow_log: 批准流程Log
+  title_rcb_workflow_log: 批准流程Log
   title_assigned: Assigned
   title_approval: Approval
   title_rejected: Rejected
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: New step  
-  message_dmsf_wokflow_note: Your note...
+  rcb_and: AND
+  rcb_or: OR
+  rcb_new_step: New step  
+  message_rcb_wokflow_note: Your note...
   info_revision: "r%{rev}"
   link_workflow: Workflow  
   notice_workflow_started: Approval workflow successfully started
@@ -315,9 +308,9 @@ zh-TW:
   
   link_trash_bin: Trash bin
   title_restore: Restore
-  notice_dmsf_file_restored: The document has been successfully restored
-  notice_dmsf_folder_restored: The folder has been successfully restored
-  notice_dmsf_link_restored: The link has been successfully restored
+  notice_rcb_file_restored: The document has been successfully restored
+  notice_rcb_folder_restored: The folder has been successfully restored
+  notice_rcb_link_restored: The link has been successfully restored
   title_restore_checked: Restore checked
   error_parent_folder: "The parent folder doesn't exist"
   

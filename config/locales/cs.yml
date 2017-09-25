@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 cs:
-  dmsf: DMSF
-  label_dmsf_file_plural: Dokumenty
-  label_dmsf_file_revision_plural: Revize dokumentů
-  label_dmsf_file_revision_access_plural: Přístupy k dokumentům
+  rcb: Alfresco
+  label_rcb_file_plural: Dokumenty
+  label_rcb_file_revision_plural: Revize dokumentů
+  label_rcb_file_revision_access_plural: Přístupy k dokumentům
   warning_no_entries_selected: Není nic vybráno
   error_email_to_must_be_entered: Musí být zadán adresát  
   warning_file_already_locked: Soubor je již zamčen
@@ -148,11 +148,11 @@ cs:
   heading_uploaded_files: Nahrané soubory
   submit_commit: Potvrdit
   link_documents: Dokumenty
-  permission_view_dmsf_file_revision_accesses: View downloads in Activity stream
-  permission_view_dmsf_file_revisions: View revisions in Activity stream
-  permission_view_dmsf_folders: Procházet dokumenty
+  permission_view_rcb_file_revision_accesses: View downloads in Activity stream
+  permission_view_rcb_file_revisions: View revisions in Activity stream
+  permission_view_rcb_folders: Procházet dokumenty
   permission_user_preferences: Nastavení uživatele
-  permission_view_dmsf_files: Zobrazit dokumenty
+  permission_view_rcb_files: Zobrazit dokumenty
   permission_folder_manipulation: Manipulace se složkami
   permission_file_manipulation: Manipulace se soubory  
   permission_force_file_unlock: Vynucené odemknutí souboru
@@ -177,16 +177,16 @@ cs:
   error_file_can_not_be_created: Nelze vytvořit soubor v cílové složce
   error_wrong_zip_encoding: Chybné kódování Zipu
   warning_xapian_not_available: Xapian není k dostupný
-  menu_dmsf: DMSF
+  menu_rcb: Alfresco
   label_physical_file_delete: Fyzické smazání souboru
   user_is_not_project_member: Nejste členem projektu
   heading_access_downloads_emails: Stažené/Emaily
   heading_access_first: První
   heading_access_last: Poslední
-  label_dmsf_updated: Změněno
-  label_dmsf_downloaded: Staženo
+  label_rcb_updated: Změněno
+  label_rcb_downloaded: Staženo
   title_total_size_of_all_files: Celková velikost všech souborů v adresáři
-  project_module_dmsf: DMSF
+  project_module_rcb: RCB
   warning_no_project_to_copy_file_to: Neexistuje projekt, do kterého můžete kopírovat
   comment_copied_from: "Zkopírováno z %{source}"
   notice_file_copied: Soubor zkopírován
@@ -194,7 +194,7 @@ cs:
   field_target_project: Cílový projekt
   field_target_folder: Cílový adresář
   title_copy_or_move: Kopírovat/Přesunout
-  label_dmsf_folder_plural: Složky
+  label_rcb_folder_plural: Složky
   comment_moved_from: "Přesunuto z %{source}"
   error_target_folder_same: Cílový adresář a projekt jsou stejné jako aktuální
   error_file_cannot_be_moved: Soubor nemůže být přesunut
@@ -210,9 +210,7 @@ cs:
   header_minimum_filesize: Chyba souboru.
   error_minimum_filesize: "Soubor %{file} má nulovou velikost a nebude přiložen."
   parent_directory: Nadřazený adresář
-  note_webdav: "Webdav je po aktivaci k dispozici na %{protocol}://%{domain}/dmsf/webdav/[identifikátor projektu]"
-  label_webdav: Webdav functionalita
-  label_dmsf_plural: "Kopíruj dokumenty a složky (%{files} souborů v %{folders} složkách)"
+  label_rcb_plural: "Kopíruj dokumenty a složky (%{files} souborů v %{folders} složkách)"
 
   warning_folder_already_locked: Tato složka je již zamčená
   notice_folder_locked: Složka byla úspěšně zamčena
@@ -223,32 +221,27 @@ cs:
   title_unlock_folder: Odemknout
   title_lock_folder: Zamknout
 
-  select_option_webdav_readonly: Pouze pro čtení
-  select_option_webdav_readwrite: Čtení/Zápis
-  label_webdav_strategy: Webdav strategie
-  note_webdav_strategy: Umožní administrátorovi rozhodnout, zdali je webdav pouze pro čtení nebo i pro zápis.
-    
-  error_unable_delete_dmsf_workflow: Nelze smazat schvalovací proces
+  error_unable_delete_rcb_workflow: Nelze smazat schvalovací proces
   error_empty_note: Musí být vyplněn komentář
   error_workflow_assign: Chyba při přiřazování
   error_cannot_start_workflow: Schvalovací proces nemůže být zahájen
   error_cannot_renumber_steps: Schvalovací kroky nelze přečíslovat
-  label_dmsf_workflow_new: Nový schvalovací proces
-  field_label_dmsf_workflow: Schvalovací proces
-  field_label_dmsf_workflow_name: Approval workflow name
-  label_dmsf_workflow_plural: Schvalovací procesy
-  label_dmsf_workflow_plural_num: Schvalovací procesy (%{count})
-  label_dmsf_workflow_step: Krok
-  label_dmsf_workflow_step_plural: Kroky
-  label_dmsf_workflow_approval: Schválení
-  label_dmsf_workflow_approval_plural: Schválení
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Schválit
-  label_dmsf_wokflow_action_reject: Odmítnout
-  label_dmsf_wokflow_action_delegate: Delegovat na
-  label_dmsf_wokflow_action_assign: Přiřadit schvalovací proces
-  label_dmsf_wokflow_action_start: Zahájit schvalovací proces
-  label_dmsf_workflow_add_approver: "Přidat schvalovatele s logickou funkcí:"
+  label_rcb_workflow_new: Nový schvalovací proces
+  field_label_rcb_workflow: Schvalovací proces
+  field_label_rcb_workflow_name: Approval workflow name
+  label_rcb_workflow_plural: Schvalovací procesy
+  label_rcb_workflow_plural_num: Schvalovací procesy (%{count})
+  label_rcb_workflow_step: Krok
+  label_rcb_workflow_step_plural: Kroky
+  label_rcb_workflow_approval: Schválení
+  label_rcb_workflow_approval_plural: Schválení
+  label_rcb: RCB
+  label_rcb_wokflow_action_approve: Schválit
+  label_rcb_wokflow_action_reject: Odmítnout
+  label_rcb_wokflow_action_delegate: Delegovat na
+  label_rcb_wokflow_action_assign: Přiřadit schvalovací proces
+  label_rcb_wokflow_action_start: Zahájit schvalovací proces
+  label_rcb_workflow_add_approver: "Přidat schvalovatele s logickou funkcí:"
   label_or: nebo
   label_action: Akce
   label_note: Komentář
@@ -257,14 +250,14 @@ cs:
   title_delegation: Delegace
   title_assignment: Přiřazení
   title_start: Zahájení
-  title_dmsf_workflow_log: Historie schvalovacího procesu
+  title_rcb_workflow_log: Historie schvalovacího procesu
   title_assigned: Přiřazený
   title_approval: Schválený
   title_rejected: Zamítnutý
-  dmsf_and: A
-  dmsf_or: NEBO
-  dmsf_new_step: Nový krok
-  message_dmsf_wokflow_note: Váš komentář...
+  rcb_and: A
+  rcb_or: NEBO
+  rcb_new_step: Nový krok
+  message_rcb_wokflow_note: Váš komentář...
   info_revision: "r%{rev}"
   link_workflow: Schvalovací proces
   notice_workflow_started: Schvalovací proces byl úspěšně zahájen
@@ -315,9 +308,9 @@ cs:
   
   link_trash_bin: Koš
   title_restore: Obnovit
-  notice_dmsf_file_restored: Document byl úspěšně obnoven
-  notice_dmsf_folder_restored: Adresář byl úspěšně obnoven
-  notice_dmsf_link_restored: Odkaz byl úspěšně obnoven
+  notice_rcb_file_restored: Document byl úspěšně obnoven
+  notice_rcb_folder_restored: Adresář byl úspěšně obnoven
+  notice_rcb_link_restored: Odkaz byl úspěšně obnoven
   title_restore_checked: Obnov vybrané
   error_parent_folder: Nadřazený adresář neexistuje
   

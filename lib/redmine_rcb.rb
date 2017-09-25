@@ -18,14 +18,13 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-RedmineApp::Application.routes.draw do
+RCB_MAX_NOTIFICATION_RECEIVERS_INFO = 10
 
-  #
-  # rcb controller
-  #   /projects/<project>/rcb
-  #   [As this controller also processes 'folders' it maybe better to branch into a folder route rather than leaving it as is]
-  ##
-  post '/projects/:id/rcb/entries', :controller => 'rcb', :action => 'entries_operation'
-  get '/projects/:id/rcb/entries/download_email_entries', :controller => 'rcb', :action => 'download_email_entries', :as => 'download_email_entries'
-  get '/projects/:id/rcb/', :controller => 'rcb', :action => 'show', :as => 'rcb_folder'
+# Hooks
+require 'redmine_rcb/hooks/base_view_hooks'
+
+module RedmineRcb
 end
+
+# Add the plugin view folder into ActionMailer's paths to search
+ActionMailer::Base.append_view_path(File.expand_path(File.dirname(__FILE__) + '/../app/views'))

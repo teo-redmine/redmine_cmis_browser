@@ -1,0 +1,66 @@
+<%#=
+# encoding: utf-8
+#
+# Redmine plugin for Document Management System "Features"
+#
+# Copyright (C) 2011-15 Karel Pičman <karel.picman@kontron.com>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+%>
+
+<% locked_for_user = subfolder && subfolder.locked_for_user? %>
+<% locked = subfolder && subfolder.locked? %>
+
+<td class="check"><%= check_box_tag(name, id, false,
+  :title => l(:title_check_for_zip_download), :id => "subfolder_#{id}") %></td>
+<td class="title">
+  <% if subfolder.is_project %>
+    <%= link_to(h(title),
+      url_for(:controller => 'rcb', :action => 'show', :id => subfolder.redmine_project_identifier),
+      :class => 'icon icon-folder') %>
+  <% else %>
+    <%= link_to(h(title),
+      rcb_folder_path(:id => project, :folder_id => subfolder.id),
+      :class => 'icon icon-folder') %>
+  <% end %>
+  <% if link %>
+    <div class="filename" title="<%= l(:label_target_folder)%>"><%= link.path %></div>
+  <% else %>
+    <div class="filename" title="<%= l(:title_items)%>">[<%= subfolder.items %>]</div>
+  <% end %>
+</td>
+<td class="size"></td>
+<td class="modified"><%= format_time(subfolder.modified) if subfolder %>
+  <% if locked_for_user %>
+    <% if subfolder.lock.reverse[0].user %>
+      <%= link_to(image_tag(link ? 'locked_gray.png' : 'locked.png', :plugin => 'redmine_cmis_browser'),
+        user_path(subfolder.lock.reverse[0].user),
+        :title => l(:title_locked_by_user, :user => subfolder.lock.reverse[0].user)) %>
+    <% else %>
+      <%= content_tag(:span, image_tag(link ? 'locked_gray.png' : 'locked.png', :plugin => 'redmine_cmis_browser'),
+        :title => l(:notice_account_unknown_email)) %>
+    <% end %>
+  <% elsif locked %>
+    <%= content_tag(:span, image_tag(link ? 'lockedbycurrent_gray.png' : 'lockedbycurrent.png', :plugin => 'redmine_cmis_browser'),
+      :title => l(:title_locked_by_you)) %>
+  <% end %>
+</td>
+<td class="version"></td>
+<td class="workflow"></td>
+<td class="author"><%= h(subfolder.user) if subfolder %></td>
+<td class="invisible">0</td>
+<td class="invisible">0</td>
+<td class="invisible"><%= subfolder.modified.to_i if subfolder %></td>
+<td class="invisible">0</td>

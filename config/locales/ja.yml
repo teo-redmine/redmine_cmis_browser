@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ja:
-  dmsf: DMSF
-  label_dmsf_file_plural: 文書管理ファイル
-  label_dmsf_file_revision_plural: 文書管理ファイルリビジョン
-  label_dmsf_file_revision_access_plural: 文書管理ファイルアクセス
+  rcb: Alfresco
+  label_rcb_file_plural: 文書管理ファイル
+  label_rcb_file_revision_plural: 文書管理ファイルリビジョン
+  label_rcb_file_revision_access_plural: 文書管理ファイルアクセス
   warning_no_entries_selected: エントリーが選ばれていません
   error_email_to_must_be_entered: 電子メールの To は省略できません  
   warning_file_already_locked: ファイルは既にロックされています
@@ -148,11 +148,11 @@ ja:
   heading_uploaded_files: アップロードされたファイル
   submit_commit: コミット
   link_documents: 文書
-  permission_view_dmsf_file_revision_accesses: ダウンロード履歴の表示
-  permission_view_dmsf_file_revisions: リビジョン履歴の表示
-  permission_view_dmsf_folders: ファイルの一覧
+  permission_view_rcb_file_revision_accesses: ダウンロード履歴の表示
+  permission_view_rcb_file_revisions: リビジョン履歴の表示
+  permission_view_rcb_folders: ファイルの一覧
   permission_user_preferences: ユーザ設定
-  permission_view_dmsf_files: ファイルの表示
+  permission_view_rcb_files: ファイルの表示
   permission_folder_manipulation: フォルダの操作
   permission_file_manipulation: ファイルの操作  
   permission_force_file_unlock: ファイルの強制ロック解除
@@ -178,16 +178,16 @@ ja:
   error_file_can_not_be_created: ファイルを保存フォルダに作ることができません
   error_wrong_zip_encoding: Zip エンコーディングが正しくありません
   warning_xapian_not_available: Xapian が利用できる状態になっていません
-  menu_dmsf: 文書管理
+  menu_rcb: 文書管理
   label_physical_file_delete: 物理ファイルの削除
   user_is_not_project_member: あなたはプロジェクトのメンバーではありません
   heading_access_downloads_emails: ダウンロード/電子メール
   heading_access_first: 初回アクセス
   heading_access_last: 最終アクセス
-  label_dmsf_updated: 文書管理 更新
-  label_dmsf_downloaded: 文書管理 ダウンロード
+  label_rcb_updated: 文書管理 更新
+  label_rcb_downloaded: 文書管理 ダウンロード
   title_total_size_of_all_files: このフォルダにある全ファイルの合計サイズ
-  project_module_dmsf: 文書管理
+  project_module_rcb: 文書管理
   warning_no_project_to_copy_file_to: ファイルをコピーするプロジェクトがありません
   comment_copied_from: "%{source} からコピーしました"
   notice_file_copied: ファイルをコピーしました
@@ -195,7 +195,7 @@ ja:
   field_target_project: ターゲットプロジェクト
   field_target_folder: ターゲットフォルダ
   title_copy_or_move: コピー/移動
-  label_dmsf_folder_plural: Dmsf フォルダ
+  label_rcb_folder_plural: Alfresco フォルダ
   comment_moved_from: "%{source} から移動しました"
   error_target_folder_same: コピー/移動先のフォルダとプロジェクトが現在と同じです  
   error_file_cannot_be_moved: ファイルを移動できません
@@ -211,9 +211,7 @@ ja:
   header_minimum_filesize: "ファイルエラー"
   error_minimum_filesize: " %{file} のサイズは0バイトのため添付することはできません。"
   parent_directory: "親ディレクトリ"
-  note_webdav: "Webdavを有効にすると %{protocol}://%{domain}/dmsf/webdav/[project identifier] で閲覧することができます"
-  label_webdav: "Webdav機能"
-  label_dmsf_plural: "ファイルとフォルダをコピーします (%{files} files in %{folders} folders)"
+  label_rcb_plural: "ファイルとフォルダをコピーします (%{files} files in %{folders} folders)"
 
   warning_folder_already_locked: "このフォルダは既にロックされています"
   notice_folder_locked: "フォルダをロックしました"
@@ -224,32 +222,27 @@ ja:
   title_unlock_folder: "ロックを解除し他メンバが更新できるようにします"
   title_lock_folder: "ロックし他メンバとの競合を回避します"
 
-  select_option_webdav_readonly: "Read-only"
-  select_option_webdav_readwrite: "Read/Write"
-  label_webdav_strategy: "Webdavアクセス制御"
-  note_webdav_strategy: "Webdavを使ったアクセスの制御（Read-onlyまたはRead/Write）を決定します。"
-
-  error_unable_delete_dmsf_workflow: そのワークフローの削除はできません
+  error_unable_delete_rcb_workflow: そのワークフローの削除はできません
   error_empty_note: コメント欄が空です
   error_workflow_assign: ワークフローの適用処理中にエラーは発生しました
   error_cannot_start_workflow: ワークフローを開始することができませんでした
   error_cannot_renumber_steps: ステップの順番の変更ができませんでした
-  label_dmsf_workflow_new: 新規承認ワークフロー
-  field_label_dmsf_workflow: 承認ワークフロー
-  field_label_dmsf_workflow_name: 承認ワークフロー名
-  label_dmsf_workflow_plural: 承認ワークフロー
-  label_dmsf_workflow_plural_num: 承認ワークフロー数 (%{count})
-  label_dmsf_workflow_step: ステップ
-  label_dmsf_workflow_step_plural: ステップ
-  label_dmsf_workflow_approval: 承認
-  label_dmsf_workflow_approval_plural: 承認
-  label_dmsf: 文書管理
-  label_dmsf_wokflow_action_approve: 承認
-  label_dmsf_wokflow_action_reject: 否認
-  label_dmsf_wokflow_action_delegate: 代理承認
-  label_dmsf_wokflow_action_assign: 承認ワークフロー設定
-  label_dmsf_wokflow_action_start: ワークフロー開始
-  label_dmsf_workflow_add_approver: "新規承認者の追加:"
+  label_rcb_workflow_new: 新規承認ワークフロー
+  field_label_rcb_workflow: 承認ワークフロー
+  field_label_rcb_workflow_name: 承認ワークフロー名
+  label_rcb_workflow_plural: 承認ワークフロー
+  label_rcb_workflow_plural_num: 承認ワークフロー数 (%{count})
+  label_rcb_workflow_step: ステップ
+  label_rcb_workflow_step_plural: ステップ
+  label_rcb_workflow_approval: 承認
+  label_rcb_workflow_approval_plural: 承認
+  label_rcb: 文書管理
+  label_rcb_wokflow_action_approve: 承認
+  label_rcb_wokflow_action_reject: 否認
+  label_rcb_wokflow_action_delegate: 代理承認
+  label_rcb_wokflow_action_assign: 承認ワークフロー設定
+  label_rcb_wokflow_action_start: ワークフロー開始
+  label_rcb_workflow_add_approver: "新規承認者の追加:"
   label_or: または
   label_action: アクション
   label_note: コメント  
@@ -258,14 +251,14 @@ ja:
   title_delegation: 代理承認
   title_assignment: アサイン
   title_start: 開始  
-  title_dmsf_workflow_log: 承認ワークフローの履歴
+  title_rcb_workflow_log: 承認ワークフローの履歴
   title_assigned: アサイン
   title_approval: 承認
   title_rejected: 否認
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: 新規ステップ  
-  message_dmsf_wokflow_note: コメント
+  rcb_and: AND
+  rcb_or: OR
+  rcb_new_step: 新規ステップ  
+  message_rcb_wokflow_note: コメント
   info_revision: "r%{rev}"
   link_workflow: ワークフロー  
   notice_workflow_started: 承認ワークフローが開始されました
@@ -315,9 +308,9 @@ ja:
   
   link_trash_bin: ゴミ箱
   title_restore: 復元
-  notice_dmsf_file_restored: ファイルを復元しました
-  notice_dmsf_folder_restored: フォルダを復元しました
-  notice_dmsf_link_restored: リンクを復元しました
+  notice_rcb_file_restored: ファイルを復元しました
+  notice_rcb_folder_restored: フォルダを復元しました
+  notice_rcb_link_restored: リンクを復元しました
   title_restore_checked: チェックしたものを復元します
   error_parent_folder: "親フォルダが存在しません"
   

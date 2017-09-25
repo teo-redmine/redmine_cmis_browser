@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 en:
-  dmsf: Alfresco
-  label_dmsf_file_plural: Documents
-  label_dmsf_file_revision_plural: Document revisions
-  label_dmsf_file_revision_access_plural: Document accesses
+  rcb: Alfresco
+  label_rcb_file_plural: Documents
+  label_rcb_file_revision_plural: Document revisions
+  label_rcb_file_revision_access_plural: Document accesses
   warning_no_entries_selected: No entries selected
   error_email_to_must_be_entered: Email To must be entered  
   warning_file_already_locked: File already locked
@@ -87,7 +87,7 @@ en:
   title_lock_file: Lock to prevent changes for other members  
   title_download_checked: Download checked in Zip archive  
   title_send_checked_by_email: Send checked by email
-  link_user_preferences: Your DMSF project preferences
+  link_user_preferences: Your Alfresco project preferences
   heading_send_documents_by_email: Send documents by email
   label_email_from: From
   label_email_to: To
@@ -151,11 +151,11 @@ en:
   heading_uploaded_files: Uploaded Files
   submit_commit: Commit
   link_documents: Documents
-  permission_view_dmsf_file_revision_accesses: View downloads in Activity stream
-  permission_view_dmsf_file_revisions: View revisions in Activity stream
-  permission_view_dmsf_folders: Browse documents
+  permission_view_rcb_file_revision_accesses: View downloads in Activity stream
+  permission_view_rcb_file_revisions: View revisions in Activity stream
+  permission_view_rcb_folders: Browse documents
   permission_user_preferences: User preferences
-  permission_view_dmsf_files: View documents
+  permission_view_rcb_files: View documents
   permission_folder_manipulation: Folder manipulation
   permission_file_manipulation: File manipulation  
   permission_force_file_unlock: Force file unlock
@@ -180,16 +180,16 @@ en:
   error_file_can_not_be_created: "File can't be created in storage directory"
   error_wrong_zip_encoding: Wrong Zip encoding
   warning_xapian_not_available: Xapian not available
-  menu_dmsf: Alfresco
+  menu_rcb: Alfresco
   label_physical_file_delete: Physical file delete
   user_is_not_project_member: You are not a member of the project
   heading_access_downloads_emails: Downloads/Emails
   heading_access_first: First
   heading_access_last: Last
-  label_dmsf_updated: Updated
-  label_dmsf_downloaded: Downloaded
+  label_rcb_updated: Updated
+  label_rcb_downloaded: Downloaded
   title_total_size_of_all_files: Total size of all files under this folder
-  project_module_dmsf: Alfresco
+  project_module_rcb: Alfresco
   warning_no_project_to_copy_file_to: No project to copy file to
   comment_copied_from: "Copied from %{source}"
   notice_file_copied: File copied
@@ -197,7 +197,7 @@ en:
   field_target_project: Target project
   field_target_folder: Target folder
   title_copy_or_move: Copy/Move
-  label_dmsf_folder_plural: Folders
+  label_rcb_folder_plural: Folders
   comment_moved_from: "Moved from %{source}"
   error_target_folder_same: Target folder and project are the same as current
   error_file_cannot_be_moved: "File can't be moved"
@@ -213,9 +213,7 @@ en:
   header_minimum_filesize: File Error.
   error_minimum_filesize: "The file %{file} is 0 bytes and will not be attached."
   parent_directory: Parent Directory
-  note_webdav: "Webdav once enabled can be found at %{protocol}://%{domain}/dmsf/webdav/[project identifier]"
-  label_webdav: Webdav functionality
-  label_dmsf_plural: "Copy Documents and folders (%{files} files in %{folders} folders)"
+  label_rcb_plural: "Copy Documents and folders (%{files} files in %{folders} folders)"
 
   warning_folder_already_locked: This folder is already locked
   notice_folder_locked: The folder was successfully locked
@@ -226,32 +224,27 @@ en:
   title_unlock_folder: Unlock to allow changes for other members
   title_lock_folder: Lock to prevent changes for other members
 
-  select_option_webdav_readonly: Read-only
-  select_option_webdav_readwrite: Read/Write
-  label_webdav_strategy: Webdav strategy
-  note_webdav_strategy: Enables the administrator to decide if webdav is a read-only or read-write platform for end users.  
-  
-  error_unable_delete_dmsf_workflow: Unable to delete the workflow
+  error_unable_delete_rcb_workflow: Unable to delete the workflow
   error_empty_note: "The note can't be empty"
   error_workflow_assign: An error occured while assigning
   error_cannot_start_workflow: "Workflow can't be started"
   error_cannot_renumber_steps: "Steps can't be renumbered"
-  label_dmsf_workflow_new: New approval workflow  
-  field_label_dmsf_workflow: Approval Workflow
-  field_label_dmsf_workflow_name: Approval workflow name
-  label_dmsf_workflow_plural: Approval workflows
-  label_dmsf_workflow_plural_num: Approval workflows (%{count})
-  label_dmsf_workflow_step: Step
-  label_dmsf_workflow_step_plural: Steps
-  label_dmsf_workflow_approval: Approval
-  label_dmsf_workflow_approval_plural: Approvals
-  label_dmsf: Alfresco
-  label_dmsf_wokflow_action_approve: Approve
-  label_dmsf_wokflow_action_reject: Reject
-  label_dmsf_wokflow_action_delegate: Delegate to
-  label_dmsf_wokflow_action_assign: Assign an approval workflow
-  label_dmsf_wokflow_action_start: Start workflow
-  label_dmsf_workflow_add_approver: "Add a new approver with a logical function:"
+  label_rcb_workflow_new: New approval workflow  
+  field_label_rcb_workflow: Approval Workflow
+  field_label_rcb_workflow_name: Approval workflow name
+  label_rcb_workflow_plural: Approval workflows
+  label_rcb_workflow_plural_num: Approval workflows (%{count})
+  label_rcb_workflow_step: Step
+  label_rcb_workflow_step_plural: Steps
+  label_rcb_workflow_approval: Approval
+  label_rcb_workflow_approval_plural: Approvals
+  label_rcb: Alfresco
+  label_rcb_wokflow_action_approve: Approve
+  label_rcb_wokflow_action_reject: Reject
+  label_rcb_wokflow_action_delegate: Delegate to
+  label_rcb_wokflow_action_assign: Assign an approval workflow
+  label_rcb_wokflow_action_start: Start workflow
+  label_rcb_workflow_add_approver: "Add a new approver with a logical function:"
   label_or: or
   label_action: Action
   label_note: Note  
@@ -260,14 +253,14 @@ en:
   title_delegation: Delegation
   title_assignment: Assignment
   title_start: Start  
-  title_dmsf_workflow_log: Approval Workflow Log
+  title_rcb_workflow_log: Approval Workflow Log
   title_assigned: Assigned
   title_approval: Approval
   title_rejected: Rejected
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: New step  
-  message_dmsf_wokflow_note: Your note...
+  rcb_and: AND
+  rcb_or: OR
+  rcb_new_step: New step  
+  message_rcb_wokflow_note: Your note...
   info_revision: "r%{rev}"
   link_workflow: Workflow
   notice_workflow_started: Approval workflow successfully started  
@@ -318,9 +311,9 @@ en:
   
   link_trash_bin: Trash bin
   title_restore: Restore
-  notice_dmsf_file_restored: The document has been successfully restored
-  notice_dmsf_folder_restored: The folder has been successfully restored
-  notice_dmsf_link_restored: The link has been successfully restored
+  notice_rcb_file_restored: The document has been successfully restored
+  notice_rcb_folder_restored: The folder has been successfully restored
+  notice_rcb_link_restored: The link has been successfully restored
   title_restore_checked: Restore checked
   error_parent_folder: "The parent folder doesn't exist"
   

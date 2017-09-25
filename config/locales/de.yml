@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 de:
-  dmsf: DMS
-  label_dmsf_file_plural: DMS
-  label_dmsf_file_revision_plural: Dokumenteversion
-  label_dmsf_file_revision_access_plural: Dokumentezugriffe
+  rcb: Alfresco
+  label_rcb_file_plural: DMS
+  label_rcb_file_revision_plural: Dokumenteversion
+  label_rcb_file_revision_access_plural: Dokumentezugriffe
   warning_no_entries_selected: Keine Einträge ausgewählt
   error_email_to_must_be_entered: Es muss ein Email-Empfänger angegeben werden.  
   warning_file_already_locked: Datei schon gesperrt
@@ -148,11 +148,11 @@ de:
   heading_uploaded_files: Hochgeladene Dateien
   submit_commit: OK
   link_documents: Dateien
-  permission_view_dmsf_file_revision_accesses: Betrachte Dokumentezugriffe in Aktivitäten
-  permission_view_dmsf_file_revisions: Betrachte Dokumenteversion in Aktivitäten
-  permission_view_dmsf_folders: Durchforste Dateien
+  permission_view_rcb_file_revision_accesses: Betrachte Dokumentezugriffe in Aktivitäten
+  permission_view_rcb_file_revisions: Betrachte Dokumenteversion in Aktivitäten
+  permission_view_rcb_folders: Durchforste Dateien
   permission_user_preferences: Benutzereinstellungen
-  permission_view_dmsf_files: Betrachte Dateien
+  permission_view_rcb_files: Betrachte Dateien
   permission_folder_manipulation: Ordner bearbeiten
   permission_file_manipulation: Dateien bearbeiten  
   permission_force_file_unlock: Erzwinge Aufhebung der Dateisperre  
@@ -177,16 +177,16 @@ de:
   error_file_can_not_be_created: Datei kann nicht in dem gewählten Ordner erstellt werden.
   error_wrong_zip_encoding: Falsche ZIP-Kodierung
   warning_xapian_not_available: Xapian steht nicht zur Verfügung
-  menu_dmsf: DMS
+  menu_rcb: DMS
   label_physical_file_delete: Physisches Dateilöschen
   user_is_not_project_member: Du bist kein Projektmitglied
   heading_access_downloads_emails: Downloads oder Emailversand
   heading_access_first: Erste
   heading_access_last: Letzte
-  label_dmsf_updated: aktualisiert
-  label_dmsf_downloaded: gespeichert
+  label_rcb_updated: aktualisiert
+  label_rcb_downloaded: gespeichert
   title_total_size_of_all_files: Gesamtgröße aller Dateien in diesem Ordner
-  project_module_dmsf: DMS
+  project_module_rcb: DMS
   warning_no_project_to_copy_file_to: Kein Projekt, in das die Datei kopiert werden kann.
   comment_copied_from: "Kopiert aus %{source}"
   notice_file_copied: Datei kopiert
@@ -194,7 +194,7 @@ de:
   field_target_project: Zielprojekt
   field_target_folder: Zielordner
   title_copy_or_move: Kopieren/Verschieben
-  label_dmsf_folder_plural: Ordner
+  label_rcb_folder_plural: Ordner
   comment_moved_from: "Verschoben aus %{source}"
   error_target_folder_same: Zielordner und Projekt sind dieselbe wie die aktuellen.
   error_file_cannot_be_moved: Die Datei kann nicht verschoben werden.
@@ -210,9 +210,7 @@ de:
   header_minimum_filesize: Dateifehler wegen minimaler Dateigröße.
   error_minimum_filesize: "Die Datei %{file} ist 0 Bytes groß und wird deswegen nicht angehängt."
   parent_directory: übergeordnetes Verzeichnis
-  note_webdav: "Nach der Aktivierung von WebDav kann der Dienst über die URL %{protocol}://%{domain}/dmsf/webdav/[project identifier] erreicht werden."
-  label_webdav: Webdav Funktionalität
-  label_dmsf_plural: "Kopieren von Dateien und Ordnern (%{files} Dateien in %{folders} Ordnern)"
+  label_rcb_plural: "Kopieren von Dateien und Ordnern (%{files} Dateien in %{folders} Ordnern)"
   
   warning_folder_already_locked: Dieser Ordner ist bereits gesperrt
   notice_folder_locked: Der Ordner wurde erfolgreich gesperrt
@@ -222,33 +220,28 @@ de:
   title_folder_parent_locked: "Übergeordnetes Verzeichnis %{name} ist gesperrt"  
   title_unlock_folder: Ordner zur Bearbeitung durch andere Benutzer entsperren
   title_lock_folder: Ordner zum Schutz vor Bearbeitung durch andere Benutzer sperren
-  
-  select_option_webdav_readonly: nur Lesen
-  select_option_webdav_readwrite: Lesen/Schreiben
-  label_webdav_strategy: Webdav Strategie
-  note_webdav_strategy: Erlaubt dem Administrator den Wechsel der WebDav Nutzung zwischen nur lesend und auch schreibenden Zugriffen.      
-  
-  error_unable_delete_dmsf_workflow: Konnte den Workflow nicht löschen
+
+  error_unable_delete_rcb_workflow: Konnte den Workflow nicht löschen
   error_empty_note: Die Notiz darf nicht leer sein.
   error_workflow_assign: Es trat ein Fehler beim Zuweisen des Workflows auf
   error_cannot_start_workflow: Workflow kann nicht gestartet werden
   error_cannot_renumber_steps: Schritte können nicht umsortiert werden
-  label_dmsf_workflow_new: Neuer Genehmigungs-Workflow
-  field_label_dmsf_workflow: Genehmigungs-Workflow
-  field_label_dmsf_workflow_name: Genehmigungs-Workflow Name
-  label_dmsf_workflow_plural: Genehmigungs-Workflows
-  label_dmsf_workflow_plural_num: Genehmigungs-Workflows (%{count})
-  label_dmsf_workflow_step: Schritt
-  label_dmsf_workflow_step_plural: Schritte
-  label_dmsf_workflow_approval: Genehmigung
-  label_dmsf_workflow_approval_plural: Genehmigungen
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Genehmigen
-  label_dmsf_wokflow_action_reject: Ablehnen
-  label_dmsf_wokflow_action_delegate: Deligieren an
-  label_dmsf_wokflow_action_assign: Weise einen Genehmigungs-Workflow zu
-  label_dmsf_wokflow_action_start: Starte Genehmigungs-Workflow
-  label_dmsf_workflow_add_approver: "Füge einen neuen Genehmiger mit einer logischen Funktion hinzu:"
+  label_rcb_workflow_new: Neuer Genehmigungs-Workflow
+  field_label_rcb_workflow: Genehmigungs-Workflow
+  field_label_rcb_workflow_name: Genehmigungs-Workflow Name
+  label_rcb_workflow_plural: Genehmigungs-Workflows
+  label_rcb_workflow_plural_num: Genehmigungs-Workflows (%{count})
+  label_rcb_workflow_step: Schritt
+  label_rcb_workflow_step_plural: Schritte
+  label_rcb_workflow_approval: Genehmigung
+  label_rcb_workflow_approval_plural: Genehmigungen
+  label_rcb: Alfresco
+  label_rcb_wokflow_action_approve: Genehmigen
+  label_rcb_wokflow_action_reject: Ablehnen
+  label_rcb_wokflow_action_delegate: Deligieren an
+  label_rcb_wokflow_action_assign: Weise einen Genehmigungs-Workflow zu
+  label_rcb_wokflow_action_start: Starte Genehmigungs-Workflow
+  label_rcb_workflow_add_approver: "Füge einen neuen Genehmiger mit einer logischen Funktion hinzu:"
   label_or: oder
   label_action: Aktion
   label_note: Notiz  
@@ -257,14 +250,14 @@ de:
   title_delegation: Deligierung
   title_assignment: Zuweisung
   title_start: Start  
-  title_dmsf_workflow_log: Genehmigungs-Workflow Verlauf
+  title_rcb_workflow_log: Genehmigungs-Workflow Verlauf
   title_assigned: Zugewiesen
   title_approval: Genehmigt
   title_rejected: Abgelehnt
-  dmsf_and: UND
-  dmsf_or: ODER
-  dmsf_new_step: Neuer Schritt
-  message_dmsf_wokflow_note: Deine Notiz...
+  rcb_and: UND
+  rcb_or: ODER
+  rcb_new_step: Neuer Schritt
+  message_rcb_wokflow_note: Deine Notiz...
   info_revision: "r%{rev}"
   link_workflow: Workflow  
   notice_workflow_started: Genehmigungs-Workflow gestartet
@@ -315,9 +308,9 @@ de:
   
   link_trash_bin: Trash bin
   title_restore: Restore
-  notice_dmsf_file_restored: The document has been successfully restored
-  notice_dmsf_folder_restored: The folder has been successfully restored
-  notice_dmsf_link_restored: The link has been successfully restored
+  notice_rcb_file_restored: The document has been successfully restored
+  notice_rcb_folder_restored: The folder has been successfully restored
+  notice_rcb_link_restored: The link has been successfully restored
   title_restore_checked: Restore checked
   error_parent_folder: "The parent folder doesn't exist"
   

@@ -9,7 +9,7 @@ install: "echo skip bundle install"
 
 script:
   - export WORKSPACE=`pwd`/workspace
-  - export PATH_TO_DMSF=`pwd`
+  - export PATH_TO_RCB=`pwd`
   - export PATH_TO_REDMINE=$WORKSPACE/redmine
   - mkdir $WORKSPACE
   - cp config/database.yml.travis $WORKSPACE/database.yml

@@ -22,10 +22,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 pl:
-  dmsf: DMSF
-  label_dmsf_file_plural: Pliki
-  label_dmsf_file_revision_plural: Document revisions
-  label_dmsf_file_revision_access_plural: Document accesses
+  rcb: Alfresco
+  label_rcb_file_plural: Pliki
+  label_rcb_file_revision_plural: Document revisions
+  label_rcb_file_revision_access_plural: Document accesses
   warning_no_entries_selected: Nie zaznaczono żadnych wierszy
   error_email_to_must_be_entered: Musisz podać adres email  
   warning_file_already_locked: Plik jest już zablokowany
@@ -85,7 +85,7 @@ pl:
   title_lock_file: Zablokuj aby zabezpieczyć przed wprowadzaniem zmian przez innych użytkowników  
   title_download_checked: Pobierz zaznaczone jako archiwum Zip
   title_send_checked_by_email: Wyślij zaznaczone przez email
-  link_user_preferences: Preferencje DMSF dla projektu
+  link_user_preferences: Preferencje Alfresco dla projektu
   heading_send_documents_by_email: Wyślij dokumenty przez email
   label_email_from: Od
   label_email_to: Do
@@ -149,11 +149,11 @@ pl:
   heading_uploaded_files: Przesłane pliki
   submit_commit: Zatwierdź
   link_documents: Dokumenty
-  permission_view_dmsf_file_revision_accesses: View downloads in Activity stream
-  permission_view_dmsf_file_revisions: View revisions in Activity stream
-  permission_view_dmsf_folders: Przeglądaj dokumenty
+  permission_view_rcb_file_revision_accesses: View downloads in Activity stream
+  permission_view_rcb_file_revisions: View revisions in Activity stream
+  permission_view_rcb_folders: Przeglądaj dokumenty
   permission_user_preferences: Preferencje użytkownika
-  permission_view_dmsf_files: Podgląd dokumentów
+  permission_view_rcb_files: Podgląd dokumentów
   permission_folder_manipulation: Modyfikacja folderów
   permission_file_manipulation: Modyfikacja plików
   permission_force_file_unlock: Wymuś odblokowanie pliku
@@ -178,16 +178,16 @@ pl:
   error_file_can_not_be_created: "Plik nie może zostać utworzony w folderze przechowywania"
   error_wrong_zip_encoding: Złe kodowanie Zip 
   warning_xapian_not_available: Xapian niedostępny
-  menu_dmsf: DMSF
+  menu_rcb: Alfresco
   label_physical_file_delete: Fizyczne usuwanie plików
   user_is_not_project_member: Nie jesteś przypisany do tego projektu
   heading_access_downloads_emails: Downloads/Emails
   heading_access_first: Pierwszy
   heading_access_last: Ostatni
-  label_dmsf_updated: DMSF został zaktualizowany
-  label_dmsf_downloaded: DMSF document downloaded
+  label_rcb_updated: Alfresco został zaktualizowany
+  label_rcb_downloaded: Alfresco document downloaded
   title_total_size_of_all_files: Łączny rozmiar plików w folderze
-  project_module_dmsf: DMSF
+  project_module_rcb: Alfresco
   warning_no_project_to_copy_file_to: Brak projektu do skopiowania pliku
   comment_copied_from: "Skopiowano z %{source}"
   notice_file_copied: Plik został skopiowany
@@ -195,7 +195,7 @@ pl:
   field_target_project: Projekt docelowy
   field_target_folder: Folder docelowy
   title_copy_or_move: Kopiuj/Przenieś
-  label_dmsf_folder_plural: Foldery
+  label_rcb_folder_plural: Foldery
   comment_moved_from: "Przeniesiono z %{source}"
   error_target_folder_same: Docelowy projekt i folder są identyczne z obecnym
   error_file_cannot_be_moved: "Plik nie może zostać przeniesiony"
@@ -211,9 +211,7 @@ pl:
   header_minimum_filesize: Błąd pliku.
   error_minimum_filesize: "Plik %{file} ma 0 bytes i nie zostanie załączony."
   parent_directory: Folder nadrzędny
-  note_webdav: "Webdav once enabled can be found at %{protocol}://%{domain}/dmsf/webdav/[project identifier]"
-  label_webdav: Webdav functionality
-  label_dmsf_plural: "Skopiuj pliki i foldery (%{files} plików w %{folders} folderach)"
+  label_rcb_plural: "Skopiuj pliki i foldery (%{files} plików w %{folders} folderach)"
 
   warning_folder_already_locked: Folder jest już zablokowany
   notice_folder_locked: Folder został zablokowany
@@ -223,32 +221,27 @@ pl:
   title_folder_parent_locked: "Folder nadrzędny %{name} jest zablokowany"  
   title_unlock_folder: Odblokuj w celu umożliwienia wprowadzania zmian innym użytkownikom
   title_lock_folder: Zablokuj aby zabezpieczyć przed wprowadzaniem zmian przez innych użytkowników
-
-  select_option_webdav_readonly: Tylko do odczytu
-  select_option_webdav_readwrite: Odczyt/Zapis
-  label_webdav_strategy: Webdav strategy
-  note_webdav_strategy: Enables the administrator to decide if webdav is a read-only or read-write platform for end users.  
   
-  error_unable_delete_dmsf_workflow: Nie można usunąć procesu workflow
+  error_unable_delete_rcb_workflow: Nie można usunąć procesu workflow
   error_empty_note: "Notatka nie może być pusta"
   error_workflow_assign: Wystąpił błąd podczas przydzielania
   error_cannot_start_workflow: "Workflow nie może zostać uruchomiony"
   error_cannot_renumber_steps: "Kroki nie mogą zostać przenumerowane"
-  label_dmsf_workflow_new: Nowy proces akceptacji  
-  field_label_dmsf_workflow: Proces akceptacji
-  field_label_dmsf_workflow_name: Nazwa procesu akceptacji
-  label_dmsf_workflow_plural: Procesy akceptacji
-  label_dmsf_workflow_step: Krok
-  label_dmsf_workflow_step_plural: Kroki
-  label_dmsf_workflow_approval: Akceptacja
-  label_dmsf_workflow_approval_plural: Akceptacje
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Zaakceptuj
-  label_dmsf_wokflow_action_reject: Odrzuć
-  label_dmsf_wokflow_action_delegate: Deleguj do
-  label_dmsf_wokflow_action_assign: Przydziel proces akceptacji
-  label_dmsf_wokflow_action_start: Uruchom workflow
-  label_dmsf_workflow_add_approver: "Dodaj nowego akceptującego z warunkiem logicznym:"
+  label_rcb_workflow_new: Nowy proces akceptacji  
+  field_label_rcb_workflow: Proces akceptacji
+  field_label_rcb_workflow_name: Nazwa procesu akceptacji
+  label_rcb_workflow_plural: Procesy akceptacji
+  label_rcb_workflow_step: Krok
+  label_rcb_workflow_step_plural: Kroki
+  label_rcb_workflow_approval: Akceptacja
+  label_rcb_workflow_approval_plural: Akceptacje
+  label_rcb: Alfresco
+  label_rcb_wokflow_action_approve: Zaakceptuj
+  label_rcb_wokflow_action_reject: Odrzuć
+  label_rcb_wokflow_action_delegate: Deleguj do
+  label_rcb_wokflow_action_assign: Przydziel proces akceptacji
+  label_rcb_wokflow_action_start: Uruchom workflow
+  label_rcb_workflow_add_approver: "Dodaj nowego akceptującego z warunkiem logicznym:"
   label_or: lub
   label_action: Akcja
   label_note: Notatka  
@@ -257,14 +250,14 @@ pl:
   title_delegation: Delegacja
   title_assignment: Przydział
   title_start: Start  
-  title_dmsf_workflow_log: Historia procesu akceptacji
+  title_rcb_workflow_log: Historia procesu akceptacji
   title_assigned: Przydzielony
   title_approval: Akceptacja
   title_rejected: Odrzucony
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: Nowy krok 
-  message_dmsf_wokflow_note: Twoja notatka...
+  rcb_and: AND
+  rcb_or: OR
+  rcb_new_step: Nowy krok 
+  message_rcb_wokflow_note: Twoja notatka...
   info_revision: "r%{rev}"
   link_workflow: Proces akceptacji
   notice_workflow_started: Proces akceptacji został uruchomiony 
@@ -315,9 +308,9 @@ pl:
   
   link_trash_bin: Kosz
   title_restore: Przywróć
-  notice_dmsf_file_restored: Dokument został przywrócony
-  notice_dmsf_folder_restored: Folder został przywrócony
-  notice_dmsf_link_restored: Link został przywrócony
+  notice_rcb_file_restored: Dokument został przywrócony
+  notice_rcb_folder_restored: Folder został przywrócony
+  notice_rcb_link_restored: Link został przywrócony
   title_restore_checked: Restore checked
   error_parent_folder: "Folder nadrzędny nie istnieje"
   

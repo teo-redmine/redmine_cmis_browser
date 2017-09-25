@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 fr:
-  dmsf: DMSF
-  label_dmsf_file_plural: Fichiers
-  label_dmsf_file_revision_plural: Révisions du document
-  label_dmsf_file_revision_access_plural: Accès au document
+  rcb: Alfresco
+  label_rcb_file_plural: Fichiers
+  label_rcb_file_revision_plural: Révisions du document
+  label_rcb_file_revision_access_plural: Accès au document
   warning_no_entries_selected: Aucun fichier sélectionné
   error_email_to_must_be_entered: "La saisie d'une adresse mail est obligatoire"
   warning_file_already_locked: Fichier déjà verrouillé
@@ -84,7 +84,7 @@ fr:
   title_lock_file: "Verrouiller afin d'empêcher les modifications du document"  
   title_download_checked: Télécharger les fichiers sélectionnés au format zip  
   title_send_checked_by_email: Transmettre les fichiers sélectionnés par mail
-  link_user_preferences: Préférences personnelles du module DMSF
+  link_user_preferences: Préférences personnelles du module Alfresco
   heading_send_documents_by_email: Transmettre les documents par mail
   label_email_from: De
   label_email_to: A
@@ -148,11 +148,11 @@ fr:
   heading_uploaded_files: Document(s) transmis
   submit_commit: Appliquer
   link_documents: Documents
-  permission_view_dmsf_file_revision_accesses: Voir les téléchargements dans le flux d'activité
-  permission_view_dmsf_file_revisions: Voir les révisions dans le flux d'activité
-  permission_view_dmsf_folders: Parcourir les documents
+  permission_view_rcb_file_revision_accesses: Voir les téléchargements dans le flux d'activité
+  permission_view_rcb_file_revisions: Voir les révisions dans le flux d'activité
+  permission_view_rcb_folders: Parcourir les documents
   permission_user_preferences: Préférences utilisateur
-  permission_view_dmsf_files: Afficher documents
+  permission_view_rcb_files: Afficher documents
   permission_folder_manipulation: Gestion des dossiers
   permission_file_manipulation: Gestion des documents  
   permission_force_file_unlock: Forcer le déverrouillage du document
@@ -177,16 +177,16 @@ fr:
   error_file_can_not_be_created: "Le fichier n'a pas pu être enregistré dans le répertoire de stockage"
   error_wrong_zip_encoding: Mauvais jeu de caractères pour la transformation du nom du ZIP
   warning_xapian_not_available: Le module Xapian est indisponible
-  menu_dmsf: DMSF
+  menu_rcb: Alfresco
   label_physical_file_delete: Suppression des fichiers
   user_is_not_project_member: "Vous n'êtes pas un membre du projet"
   heading_access_downloads_emails: Téléchargement / Envoi par mail
   heading_access_first: Premier
   heading_access_last: Dernier
-  label_dmsf_updated: Dépôt ou mise à jour du document
-  label_dmsf_downloaded: Document DMSF téléchargé
+  label_rcb_updated: Dépôt ou mise à jour du document
+  label_rcb_downloaded: Document Alfresco téléchargé
   title_total_size_of_all_files: Taille totale des fichiers de ce dossier
-  project_module_dmsf: DMSF
+  project_module_rcb: Alfresco
   warning_no_project_to_copy_file_to: "Le projet de destination n'est pas défini"
   comment_copied_from: "Copie effectuée depuis %{source}"
   notice_file_copied: Fichier copié
@@ -194,7 +194,7 @@ fr:
   field_target_project: Projet cible
   field_target_folder: Dossier cible
   title_copy_or_move: Copie/Déplacement
-  label_dmsf_folder_plural: Les dossiers
+  label_rcb_folder_plural: Les dossiers
   comment_moved_from: "Déplacé depuis %{source}"
   error_target_folder_same: Le projet et le dossier cible sont identiques au projet et dossier source
   error_file_cannot_be_moved: Le fichier ne peut pas être déplacé
@@ -210,9 +210,7 @@ fr:
   header_minimum_filesize: Erreur de fichier.
   error_minimum_filesize: "Le fichier %{file} est vide. Il ne sera pas transmis."
   parent_directory: Dossier parent
-  note_webdav: "Après l'activation du module Webdav, celui-ci sera accessible par %{protocol}://%{domain}/dmsf/webdav/[project identifier]"
-  label_webdav: Module Webdav
-  label_dmsf_plural: "Copier les fichiers et les dossiers (%{files} fichiers dans %{folders} dossiers)"
+  label_rcb_plural: "Copier les fichiers et les dossiers (%{files} fichiers dans %{folders} dossiers)"
 
   warning_folder_already_locked: Ce dossier est déjà verrouillé
   notice_folder_locked: Dossier verrouillé
@@ -222,33 +220,28 @@ fr:
   title_folder_parent_locked: "Le dossier parent %{name} verrouillé"  
   title_unlock_folder: Déverrouiller afin de permettre la modification par les membres du projet
   title_lock_folder: "Verrouiller afin d'empêcher les modifications du dossier"
-  
-  select_option_webdav_readonly: Lecture
-  select_option_webdav_readwrite: Lecture/Ecriture
-  label_webdav_strategy: Accès Webdav
-  note_webdav_strategy: "Permet à l'administrateur d'autoriser les utilisateurs au module Webdav en letcure seule ou en lecture et écriture."
-  
-  error_unable_delete_dmsf_workflow: Impossible de supprimer le flux de validation
+
+  error_unable_delete_rcb_workflow: Impossible de supprimer le flux de validation
   error_empty_note: La note ne peut pas être vide
   error_workflow_assign: "Une erreur s'est produite lors de l'attribution"
   error_cannot_start_workflow: Le flux de validation ne peut pas être démarré
   error_cannot_renumber_steps: Les étapes ne peuvent pas être renumérotées
-  label_dmsf_workflow_new: Nouveau flux de validation
-  field_label_dmsf_workflow: Flux de validation
-  field_label_dmsf_workflow_name: Nom du flux
-  label_dmsf_workflow_plural: Flux de validation
-  label_dmsf_workflow_plural_num: Flux de validation (%{count})
-  label_dmsf_workflow_step: Etape
-  label_dmsf_workflow_step_plural: Etapes
-  label_dmsf_workflow_approval: Approbation
-  label_dmsf_workflow_approval_plural: Approbations
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Approuver
-  label_dmsf_wokflow_action_reject: Rejeter
-  label_dmsf_wokflow_action_delegate: Déléguer à
-  label_dmsf_wokflow_action_assign: Attribuer un flux de validation
-  label_dmsf_wokflow_action_start: Démarrer le flux de validation
-  label_dmsf_workflow_add_approver: "Ajouter un nouvel approbateur avec une fonction logique :"
+  label_rcb_workflow_new: Nouveau flux de validation
+  field_label_rcb_workflow: Flux de validation
+  field_label_rcb_workflow_name: Nom du flux
+  label_rcb_workflow_plural: Flux de validation
+  label_rcb_workflow_plural_num: Flux de validation (%{count})
+  label_rcb_workflow_step: Etape
+  label_rcb_workflow_step_plural: Etapes
+  label_rcb_workflow_approval: Approbation
+  label_rcb_workflow_approval_plural: Approbations
+  label_rcb: Alfresco
+  label_rcb_wokflow_action_approve: Approuver
+  label_rcb_wokflow_action_reject: Rejeter
+  label_rcb_wokflow_action_delegate: Déléguer à
+  label_rcb_wokflow_action_assign: Attribuer un flux de validation
+  label_rcb_wokflow_action_start: Démarrer le flux de validation
+  label_rcb_workflow_add_approver: "Ajouter un nouvel approbateur avec une fonction logique :"
   label_or: ou
   label_action: Action
   label_note: Note  
@@ -257,14 +250,14 @@ fr:
   title_delegation: Délégation
   title_assignment: Attribution
   title_start: Démarrer  
-  title_dmsf_workflow_log: Journal du flux de validation
+  title_rcb_workflow_log: Journal du flux de validation
   title_assigned: Assigné
   title_approval: Approbation
   title_rejected: Rejeté
-  dmsf_and: ET
-  dmsf_or: OU
-  dmsf_new_step: Nouvelle étape  
-  message_dmsf_wokflow_note: Votre note...
+  rcb_and: ET
+  rcb_or: OU
+  rcb_new_step: Nouvelle étape  
+  message_rcb_wokflow_note: Votre note...
   info_revision: "r%{rev}"
   link_workflow: Flux  
   notice_workflow_started: Flux de validation démarré avec succès
@@ -315,9 +308,9 @@ fr:
   
   link_trash_bin: Corbeille
   title_restore: Récupérer
-  notice_dmsf_file_restored: Le document a été récupéré avec succès
-  notice_dmsf_folder_restored: Le dossier a été récupéré avec succès
-  notice_dmsf_link_restored: Le lien a été récupéré avec succès
+  notice_rcb_file_restored: Le document a été récupéré avec succès
+  notice_rcb_folder_restored: Le dossier a été récupéré avec succès
+  notice_rcb_link_restored: Le lien a été récupéré avec succès
   title_restore_checked: Restauration vérifiée
   error_parent_folder: "Le dossier parent n'existe pas"
   

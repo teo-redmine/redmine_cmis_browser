@@ -1,10 +1,8 @@
-# encoding: utf-8
-# 
-# Redmine plugin for Document Management System "Features"
+<%# Redmine plugin for Document Management System "Features"
 #
 # Copyright (C) 2011    Vít Jonáš <vit.jonas@gmail.com>
 # Copyright (C) 2012    Daniel Munn <dan.munn@munnster.co.uk>
-# Copyright (C) 2011-16 Karel Pičman <karel.picman@kontron.com>
+# Copyright (C) 2011-15 Karel Picman <karel.picman@kontron.com>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -18,9 +16,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.%>
 
-source 'https://rubygems.org'
-
-gem 'rubyzip', '>= 1.0.0'
-gem 'zip-zip' # Just to avoid 'cannot load such file -- zip/zip' error
+<p>
+  <%= content_tag(:label, l(:label_maximum_files_download)) %>
+  <%= text_field_tag 'settings[rcb_max_file_download]', @settings['rcb_max_file_download'], :size => 10 %>
+  <em class="info">
+    <%= l(:note_maximum_number_of_files_downloaded) %> <%= l(:label_default) %>: 0
+  </em>
+</p>

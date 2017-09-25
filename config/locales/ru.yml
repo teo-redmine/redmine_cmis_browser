@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ru:
-  dmsf: DMSF
-  label_dmsf_file_plural: Файлы
-  label_dmsf_file_revision_plural: Изменения документов
-  label_dmsf_file_revision_access_plural: Доступы к документам
+  rcb: Alfresco
+  label_rcb_file_plural: Файлы
+  label_rcb_file_revision_plural: Изменения документов
+  label_rcb_file_revision_access_plural: Доступы к документам
   warning_no_entries_selected: Файлы не выбраны
   error_email_to_must_be_entered: Нужно указать, на какую почту отправить письмо  
   warning_file_already_locked: Файл уже заблокирован
@@ -84,7 +84,7 @@ ru:
   title_lock_file: Заблокируйте файл, чтобы запретить его изменение другими участниками  
   title_download_checked: Скачать выбранные файлы  
   title_send_checked_by_email: Отправить выбранные файлы по электронной почте
-  link_user_preferences: Ваши настройки DMSF проекта
+  link_user_preferences: Ваши настройки Alfresco проекта
   heading_send_documents_by_email: Отправить документы по электронной почте
   label_email_from: От
   label_email_to: Кому
@@ -148,11 +148,11 @@ ru:
   heading_uploaded_files: Загруженные файлы
   submit_commit: Зафиксировать
   link_documents: Документы
-  permission_view_dmsf_file_revision_accesses: Показывать загрзуки файлов в ленте активности
-  permission_view_dmsf_file_revisions: Показывать изменение файлов в ленте активности
-  permission_view_dmsf_folders: Просматривать папки
+  permission_view_rcb_file_revision_accesses: Показывать загрзуки файлов в ленте активности
+  permission_view_rcb_file_revisions: Показывать изменение файлов в ленте активности
+  permission_view_rcb_folders: Просматривать папки
   permission_user_preferences: Настройки пользователя
-  permission_view_dmsf_files: Просматривать документы
+  permission_view_rcb_files: Просматривать документы
   permission_folder_manipulation: Управление папками
   permission_file_manipulation: Управление файлами  
   permission_force_file_unlock: Разблокировка любых файлов
@@ -177,16 +177,16 @@ ru:
   error_file_can_not_be_created: Файл не может быть создан в каталоге хранения файлов
   error_wrong_zip_encoding: Неверная кодировка zip
   warning_xapian_not_available: Xapian не доступен
-  menu_dmsf: Документы
+  menu_rcb: Документы
   label_physical_file_delete: Физическое удаление файла
   user_is_not_project_member: Вы не являетесь участником проекта
   heading_access_downloads_emails: Скачивание / Отправка по почте
   heading_access_first: Первый
   heading_access_last: Последний
-  label_dmsf_updated: Документ обновлен
-  label_dmsf_downloaded: Документ скачан
+  label_rcb_updated: Документ обновлен
+  label_rcb_downloaded: Документ скачан
   title_total_size_of_all_files: Общий размер всех файлов в этой папке
-  project_module_dmsf: DMSF
+  project_module_rcb: Alfresco
   warning_no_project_to_copy_file_to: Не выбран проект, в который нужно скопировать файл
   comment_copied_from: "Скопировано из %{source}"
   notice_file_copied: Файл скопирован
@@ -194,7 +194,7 @@ ru:
   field_target_project: Целевой проект
   field_target_folder: Целевая папка
   title_copy_or_move: Копировать/Переместить
-  label_dmsf_folder_plural: Папки
+  label_rcb_folder_plural: Папки
   comment_moved_from: "Перемещен из %{source}"
   error_target_folder_same: Целевая папка и проект совпадают с текущими
   error_file_cannot_be_moved: Файл не может быть перемещен
@@ -210,9 +210,7 @@ ru:
   header_minimum_filesize: "Ошибка файла."
   error_minimum_filesize: "Файла %{file} является пустым и он не будет прикреплен."
   parent_directory: "Родительская директория"
-  note_webdav: "После включения, WebDAV можно найти по адресу %{protocol}://%{domain}/dmsf/webdav/[project identifier]"
-  label_webdav: "Функциональность WebDAV"
-  label_dmsf_plural: "Скопировать файлы и папки (%{files} файлов в %{folders} папках)"
+  label_rcb_plural: "Скопировать файлы и папки (%{files} файлов в %{folders} папках)"
 
   warning_folder_already_locked: "Эта папка уже заблокирована"
   notice_folder_locked: "Папка была успешно заблокирована"
@@ -223,32 +221,27 @@ ru:
   title_unlock_folder: "Разблокируйте папку, чтобы разрешить изменение её другими участниками"
   title_lock_folder: "Заблокируйте папку, чтобы запретить ёё изменение другими участниками"
 
-  select_option_webdav_readonly: "Только для чтения"
-  select_option_webdav_readwrite: "Чтение/Запись"
-  label_webdav_strategy: "Стратегия WebDAV"
-  note_webdav_strategy: "Позволяет администратору решить в каком режиме предоставить доступ к WebDAV для конечных пользователей (Только для чтения или Чтение+Запись)."
-  
-  error_unable_delete_dmsf_workflow: Невозможно удалить процесс согласование
+  error_unable_delete_rcb_workflow: Невозможно удалить процесс согласование
   error_empty_note: Примечание не может быть пустым
   error_workflow_assign: Возникла ошибка при назначении
   error_cannot_start_workflow: Согласование не может быть запущено
   error_cannot_renumber_steps: Нумерация этапов не может быть изменена
-  label_dmsf_workflow_new: Новый процесс согласования
-  field_label_dmsf_workflow: Процесс согласования
-  field_label_dmsf_workflow_name: Название процесса согласования
-  label_dmsf_workflow_plural: Процессы согласования
-  label_dmsf_workflow_plural_num: Процессы согласования (%{count})
-  label_dmsf_workflow_step: Шаг
-  label_dmsf_workflow_step_plural: Шаги
-  label_dmsf_workflow_approval: Утверждение
-  label_dmsf_workflow_approval_plural: Утверждения
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Согласовать
-  label_dmsf_wokflow_action_reject: Отклонить
-  label_dmsf_wokflow_action_delegate: Делегировать
-  label_dmsf_wokflow_action_assign: Назначить процесс согласования
-  label_dmsf_wokflow_action_start: Запустить процесс согласования
-  label_dmsf_workflow_add_approver: "Добавить нового согласующего с логической функцией:"
+  label_rcb_workflow_new: Новый процесс согласования
+  field_label_rcb_workflow: Процесс согласования
+  field_label_rcb_workflow_name: Название процесса согласования
+  label_rcb_workflow_plural: Процессы согласования
+  label_rcb_workflow_plural_num: Процессы согласования (%{count})
+  label_rcb_workflow_step: Шаг
+  label_rcb_workflow_step_plural: Шаги
+  label_rcb_workflow_approval: Утверждение
+  label_rcb_workflow_approval_plural: Утверждения
+  label_rcb: Alfresco
+  label_rcb_wokflow_action_approve: Согласовать
+  label_rcb_wokflow_action_reject: Отклонить
+  label_rcb_wokflow_action_delegate: Делегировать
+  label_rcb_wokflow_action_assign: Назначить процесс согласования
+  label_rcb_wokflow_action_start: Запустить процесс согласования
+  label_rcb_workflow_add_approver: "Добавить нового согласующего с логической функцией:"
   label_or: или
   label_action: Действие
   label_note: Примечание
@@ -257,14 +250,14 @@ ru:
   title_delegation: Делегирование
   title_assignment: Назначение
   title_start: Запуск
-  title_dmsf_workflow_log: Протокол процесса согласования
+  title_rcb_workflow_log: Протокол процесса согласования
   title_assigned: Назначен
   title_approval: Согласован
   title_rejected: Отклонен
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: Новый шаг  
-  message_dmsf_wokflow_note: Ваше примечание...
+  rcb_and: AND
+  rcb_or: OR
+  rcb_new_step: Новый шаг  
+  message_rcb_wokflow_note: Ваше примечание...
   info_revision: "r%{rev}"
   link_workflow: Согласование  
   notice_workflow_started: Процесс согласования успешно запущен
@@ -315,9 +308,9 @@ ru:
   
   link_trash_bin: Корзина
   title_restore: Восстановить
-  notice_dmsf_file_restored: Документ был успешно восстановлен
-  notice_dmsf_folder_restored: Папка была успешно восстановлена
-  notice_dmsf_link_restored: Папка была успешно восстановлена
+  notice_rcb_file_restored: Документ был успешно восстановлен
+  notice_rcb_folder_restored: Папка была успешно восстановлена
+  notice_rcb_link_restored: Папка была успешно восстановлена
   title_restore_checked: Восстановить отмеченные
   error_parent_folder: "Родительская папка не существует"
   
