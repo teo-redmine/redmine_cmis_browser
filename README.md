@@ -52,7 +52,7 @@ On CentOS user:
 
 ## Configuration
 
-* Maximum files download: Límite máximo de archivos para una sola descarga en zip. 0 equivale a ilimitado. (e.g. 0)
+* Maximum files download: Maximum file limit for a single zip download. 0 is unlimited. (e.g. 0)
 
 
 ## License
